@@ -1,0 +1,40 @@
+{
+  "languageserver": {
+    "typescript": {
+      "command": "typescript-language-server",
+      "args": ["--stdio"],
+      "filetypes": ["typescript", "javascript"],
+      "rootPatterns": ["package.json", "tsconfig.json", ".git"]
+    },
+    "python": {
+      "command": "pylsp",
+      "args": [],
+      "filetypes": ["python"],
+      "rootPatterns": [".git", "setup.py"],
+      "settings": {
+        "pylsp": {
+          "plugins": {
+            "pylint": {
+              "enabled": true
+            },
+            "pycodestyle": {
+              "enabled": true
+            },
+            "mypy": {
+              "enabled": true
+            }
+          }
+        }
+      }
+    },
+    "php": {
+      "command": "intelephense",
+      "args": ["--stdio"],
+      "filetypes": ["php"],
+      "rootPatterns": [".git", "composer.json"],
+      "initializationOptions": {
+        "storagePath": "/path/to/intelephense/storage"
+      }
+    }
+  }
+}
