@@ -31,6 +31,9 @@ $SUDO_CMD pacman -S \
 curl \
 neovim
 
+# language server
+curl -sL install-node.vercel.app/lts | bash
+
 # 以下は実行ユーザーの$HOMEに配置するため、sudoは不要
 # vimplug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \

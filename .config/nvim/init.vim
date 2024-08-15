@@ -13,11 +13,6 @@ set helplang=ja
 inoremap <silent> <Esc> <Esc>:call system('fcitx5-remote -s keyboard-us')<CR>
 
 "----------------------------------------------------------
-" 折りたたみ無効化
-"----------------------------------------------------------
-let g:markdown_folding_disabled = 1
-
-"----------------------------------------------------------
 " 余白
 "----------------------------------------------------------
 augroup numberwidth
@@ -210,8 +205,6 @@ Plug 'tpope/vim-commentary'
 Plug 'reireias/vim-cheatsheet'
 Plug 'simeji/winresizer'
 Plug 'tpope/vim-surround'
-Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " npm install -g pyright intelephense typescript-language-server typescript
 " :CocInstall coc-pyright coc-phpls coc-json coc-tsserver
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
