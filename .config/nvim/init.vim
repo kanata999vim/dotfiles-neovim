@@ -207,6 +207,7 @@ Plug 'tpope/vim-surround'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " npm install -g pyright intelephense typescript-language-server typescript
+" :CocInstall coc-pyright coc-phpls coc-json coc-tsserver
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " jsxのSyntax
@@ -350,3 +351,4 @@ nmap <silent> gd :CocCommand tsserver.goToSourceDefinition<CR>
 " <C-g>u breaks current undo, please make your own choice
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+let g:coc_disable_startup_warning = 1
